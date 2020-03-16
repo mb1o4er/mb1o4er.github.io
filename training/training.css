@@ -1,0 +1,108 @@
+body{
+	margin: 0 auto;
+}
+a{
+	text-decoration: none;
+}
+
+#header{
+	width: 100%;
+	height: 100px;
+	background-image: linear-gradient(#424242,#585858);
+}
+#homesymbol{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 5px;
+	left: 30px;
+}
+#searchsymbol{
+	height: 28px;
+	width: 28px;
+	position: absolute;
+	top: 6px;
+	right: 30px;
+	cursor: pointer;
+}
+#searchform{
+	display: none;
+	position:absolute;
+	top: 7px;
+	right: 100px;
+}
+#search{
+	height: 30px;
+	width: 410px;
+}
+#homesymbol:hover{
+	transform: scale(1.15);
+}
+#searchsymbol:hover{
+    transform:scale(1.15);
+}
+#nav{position: relative;
+	text-align: center;
+	width: 100%;
+	background-image:linear-gradient( #B40404,#FE2E2E,#B40404);
+
+}
+.column{
+	float: left;
+}
+.middle{
+	width: 70%;
+	background-color: white;
+	height: 500px;
+}
+.side{
+	background-color:#D8D8D8;
+	width: 15%;
+	height: 500px;
+}
+#menuarea{
+padding: 0px;
+margin: 0px;
+}
+.menu{
+	color: black;
+	padding: 20px;
+	list-style-type: none;
+	text-align: center;
+}
+.menu:hover{
+	background-color:#A4A4A4;
+}
+
+.button{
+	margin: 0px;
+	cursor: pointer;
+	background-image:linear-gradient( #B40404,#FE2E2E,#B40404);
+	display: inline-block;
+	padding: 15px 40px;
+	position: relative;
+	border: none;
+	color:#D8D8D8;
+}
+.button:hover{
+	background-color:#5882FA;
+}
+.dropdown{
+	display: none;
+    position: absolute;
+}
+.button:hover .dropdown{
+    display: block;
+}
+.dropbut{
+	color: white;
+	top: 7px;
+	position: relative;
+	z-index: 3;
+	background-color:#A4A4A4;
+	padding: 10px 50px;
+	display: block;
+}
+.dropbut:hover{
+	background-color:#585858;
+}
