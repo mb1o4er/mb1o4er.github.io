@@ -1,35 +1,54 @@
 body{
 	margin: 0 auto;
+	max-width: 2000px;
 }
 a{
 	text-decoration: none;
 }
-
 #header{
 	width: 100%;
 	height: 100px;
-	background-image: linear-gradient(#424242,#585858);
+	background-image: linear-gradient(rgb(53, 172, 136),#1d7069);
 }
-#homesymbol{
-	width: 30px;
-	height: 30px;
-	position: absolute;
-	top: 5px;
-	left: 30px;
+#menusymbol{
+display: none;
+position: absolute; 
+left: 10px; 
+top: 7px; 
+height: 30px; 
+width: 30px; 
+cursor: pointer;
 }
 #searchsymbol{
-	height: 28px;
-	width: 28px;
+	height: 30px;
+	width: 30px;
 	position: absolute;
-	top: 6px;
+	top: 8px;
 	right: 30px;
 	cursor: pointer;
 }
+#searchbutton{
+	position: absolute;
+	right: 1px;
+	top: 3px;
+	height: 25px;
+	width: 70px;
+	cursor: pointer;
+	border: none;
+	border-radius: 3px;
+}
+#searchbutton:hover{
+	background-color:#1d7069;
+}
+#searchbutton:hover #searchsymhbol2{
+	transform: scale(1.15);
+}
 #searchform{
-	display: none;
-	position:absolute;
+	position: absolute;
 	top: 7px;
 	right: 100px;
+	padding: 0;
+	margin: 0;
 }
 #search{
 	height: 30px;
@@ -42,18 +61,58 @@ a{
     transform:scale(1.15);
 }
 #nav{position: relative;
-	text-align: center;
 	width: 100%;
-	background-image:linear-gradient( #B40404,#FE2E2E,#B40404);
+	background-color: #838687;
+	text-align: center;
+	height: 50px;
+	overflow: hidden;
+}
+/* Responsive design */
+/* màn hình tablet*/
+@media screen and (max-width: 850px){
+	#hormenu{
+		display: none;
+	}
+	#menusymbol{
+		display: inline-block;
+	}
 
 }
+/* màn hình smartphone */
+@media screen and (max-width:600px){
+	#search{
+		width: 200px;
+	}
+	#searchsymbol{
+		height: 15px;
+		width: 15px;
+		right: 10px;
+	}
+	#menusymbol{
+		height: 20px;
+		width: 20px;
+	}
+	#nav{
+		height: 35px;
+	}
+	#header{
+		height: 50px;
+	}
+	p{
+		display: none;
+	}
+	#searchform{
+		top: 3px;
+	}
+}
+/* -------- */
 .column{
 	float: left;
 }
 .middle{
 	width: 70%;
 	background-color: white;
-	height: 500px;
+	height: 400px;
 }
 .side{
 	background-color:#D8D8D8;
@@ -75,19 +134,20 @@ margin: 0px;
 }
 
 .button{
+	font-size: 15px;
+	display: inline-block;
 	margin: 0px;
 	cursor: pointer;
-	background-image:linear-gradient( #B40404,#FE2E2E,#B40404);
-	display: inline-block;
+	background-color: #838687;
 	padding: 15px 40px;
-	position: relative;
 	border: none;
 	color:#D8D8D8;
 }
 .button:hover{
-	background-color:#5882FA;
+	background-color:#838687;
 }
 .dropdown{
+	padding: 0;
 	display: none;
     position: absolute;
 }

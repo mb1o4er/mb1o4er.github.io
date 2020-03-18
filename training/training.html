@@ -4,83 +4,75 @@
 		<title>training</title>
 			<link rel="stylesheet" type="text/css" href="training.css" />
 			<script type="text/javascript" src="training.js" ></script>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	</head>
 	<body>
 		<!--header-->
-		<div id="header"></div>
-		<div id="nav" >
-			<a href="#"><img src="./symbol.pic/homesymbol.png" id="homesymbol"/></a>
-			<button class="button">BUTTON
+		<div id="header">
+			<h1>Bùi Văn Mạnh</h1>
+			<p>bùi văn  mạnh bùi văn mạnh bùi văn mạnh</p>
+		</div>
+		<div id="nav">
+			<img src="./symbol.pic/menusymbol.png" id="menusymbol" onclick="menuclick()" />
+		<!--Horizontal menu-->
+			<div id="hormenu">
+			<div class="button">BUTTON
 				<div class="dropdown">
 					<a href="#" class="dropbut">BUTTON</a>
 					<a href="#" class="dropbut">BUTTON</a>
 					<a href="#" class="dropbut">BUTTON</a>
 					<a href="#" class="dropbut">BUTTON</a>
 				</div>
-			</button>
-			<button class="button">BUTTON
+			</div>
+			<div class="button">BUTTON
 				<div class="dropdown">
 					<a href="#" class="dropbut">BUTTON</a>
 					<a href="#" class="dropbut">BUTTON</a>
 					<a href="#" class="dropbut">BUTTON</a>
 					<a href="#" class="dropbut">BUTTON</a>
 				</div>
-			</button>
-			<button class="button">BUTTON
+			</div>
+			<div class="button">BUTTON
 				<div class="dropdown">
 					<a href="#" class="dropbut">BUTTON</a>
 					<a href="#" class="dropbut">BUTTON</a>
 					<a href="#" class="dropbut">BUTTON</a>
 					<a href="#" class="dropbut">BUTTON</a>
 				</div>
-			</button>
-			<button class="button">BUTTON
+			</div>
+			<div class="button">BUTTON
 				<div class="dropdown">
 					<a href="#" class="dropbut">BUTTON</a>
 					<a href="#" class="dropbut">BUTTON</a>
 					<a href="#" class="dropbut">BUTTON</a>
 					<a href="#" class="dropbut">BUTTON</a>
 				</div>
-			</button>
-			<button class="button">BUTTON
+			</div>
+			<div class="button">BUTTON
 				<div class="dropdown">
 					<a href="#" class="dropbut">BUTTON</a>
 					<a href="#" class="dropbut">BUTTON</a>
 					<a href="#" class="dropbut">BUTTON</a>
 					<a href="#" class="dropbut">BUTTON</a>
 				</div>
-			</button>
-			<button class="button">BUTTON
+			</div>
+			<div class="button">BUTTON
 				<div class="dropdown">
 					<a href="#" class="dropbut">BUTTON</a>
 					<a href="#" class="dropbut">BUTTON</a>
 					<a href="#" class="dropbut">BUTTON</a>
 					<a href="#" class="dropbut">BUTTON</a>
 				</div>
-			</button>
-			<button class="button">BUTTON
-				<div class="dropdown">
-					<a href="#" class="dropbut">BUTTON</a>
-					<a href="#" class="dropbut">BUTTON</a>
-					<a href="#" class="dropbut">BUTTON</a>
-					<a href="#" class="dropbut">BUTTON</a>
-				</div>
-			</button>
-			<button class="button">BUTTON
-				<div class="dropdown">
-					<a href="#" class="dropbut">BUTTON</a>
-					<a href="#" class="dropbut">BUTTON</a>
-					<a href="#" class="dropbut">BUTTON</a>
-					<a href="#" class="dropbut">BUTTON</a>
-				</div>
-			</button>
+			</div>
+		</div>
 			<!--biểu tưởng tìm kiếm-->
-			<img src="./symbol.pic/searchsymbol.png" id="searchsymbol" onclick="clickbut()"/>
+			<img src="./symbol.pic/searchsymbol.png" id="searchsymbol" onclick="clickbutton()" title="Tìm kiếm"/>
             <!--form input tìm kiếm-->
-            <form id="searchform">
-				<input type="text" id="search" style="font-style:italic;" placeholder=" Nhập..."/>
+            <form id="searchform" style="display: none;">
+				<input type="text" id="search" name="search" style="font-style:italic; border-radius: 3px;" placeholder=" Nhập..."/>
+				<label for="search"><button id="searchbutton" value="Tìm" ><img src="./symbol.pic/searchsymbol.png" id="searchsymhbol2"  style="height: 20px; width: 20px;"/></button></label>
 			</form>
-			
 		</div>
 		<div id="content">
 			<div class="column side">
